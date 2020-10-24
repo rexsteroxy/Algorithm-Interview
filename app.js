@@ -56,42 +56,42 @@
 
 // using frequency counter to implement Anagrams
 
-function anagram(word1, word2){
+// function anagram(word1, word2){
 
-  if (word1.length !== word2.length) {
-     return false;
-  }
-  console.log("hello");
+//   if (word1.length !== word2.length) {
+//      return false;
+//   }
+//   console.log("hello");
 
-  let lookup = {};
+//   let lookup = {};
 
-  for (let i = 0; i < word1.length; i++) {
-    const element = word1[i];
-    if (lookup[element]) {
-      lookup[element] += 1;
-    } else {
-      lookup[element] = 1
-    }
-  }
-console.log(lookup);
+//   for (let i = 0; i < word1.length; i++) {
+//     const element = word1[i];
+//     if (lookup[element]) {
+//       lookup[element] += 1;
+//     } else {
+//       lookup[element] = 1
+//     }
+//   }
+// console.log(lookup);
 
-  for (let index = 0; index < word2.length; index++) {
+//   for (let index = 0; index < word2.length; index++) {
 
-    if(!lookup[word2[index]]){
-      console.log(lookup);
-      return false;
-    }else{
-      lookup[word2[index]] -= 1;
-      console.log(lookup);
-    }
+//     if(!lookup[word2[index]]){
+//       console.log(lookup);
+//       return false;
+//     }else{
+//       lookup[word2[index]] -= 1;
+//       console.log(lookup);
+//     }
 
-  }
+//   }
 
-  return true;
+//   return true;
 
-}
+// }
 
-console.log(anagram('anagram','nagaram'));
+// console.log(anagram('anagram','nagaram'));
 
 //function that will take in array of unsorted numbers return two pair number if the sum is zero
 
@@ -183,9 +183,16 @@ console.log(anagram('anagram','nagaram'));
 
 
 
-var lengthOfLongestSubstring = function(s) {
-    
-};
+// let v = "JSS1";
+// console.log(v.toLowerCase());
+
+
+
+let array= [3,4,2,1,5,7,66,44,3,59].sort((a,b) => {
+    return a < b;
+});
+
+console.log(array)
 
 
 

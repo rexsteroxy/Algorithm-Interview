@@ -18,4 +18,3 @@ function compare(arr1, sqrArr) {
 }
 
 compare([1, 3, 5, 6], [25, 1, 9, 36]);
-
