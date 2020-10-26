@@ -15,18 +15,39 @@ if(matrix.length < 1 || matrix[0].length < 1) return [];
 
 let output = [];
 
-let rs=0; let re=matrix.length - 1; let cs = 0; let ce = matrix.length ;
+let row_start=0; let row_end = matrix.length - 1; 
+let column_start = 0; let column_end = matrix[0].length-1 ;
  
-
-    for (let i = rs; i < ce; i++) {
-        output.push(matrix[0][i])   
+while (row_start <= row_end && column_start <= column_end) {
+    for (let i = column_start; i <= column_end; i++) {
+        output.push(matrix[row_start][i])   
     }
 
-    for (let index = 0; index < array.length; index++) {
-        const element = array[index];
+    for (let i = row_start + 1; i <= row_end; i++) {
+        output.push(matrix[i][column_end])   
+    }
+
+    if (row_start < row_end) {
+        for (let i = column_end - 1; i>= column_start; i--) {
+            output.push(matrix[row_end][i])  
+        }
+    }
+
+    if (column_start < column_end) {
         
+        for (let i = row_end - 1; i>row_start; i--)  {
+           output.push(matrix[i][row_start]) 
+        }
     }
 
+    row_end--;
+    column_end--;
+    row_start++;
+    column_start++;
+}
+
+
+    
 
 console.log(output)
 

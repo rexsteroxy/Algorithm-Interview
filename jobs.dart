@@ -4395,7 +4395,7 @@ if(showProfessionalFilterCard == true){
 
                                  if (shouldRunCheck) {
 
-                                   fetchProfessionalsNextTen();
+                                   fetchProfessionalsNextTen(); 
 
                                  }
 

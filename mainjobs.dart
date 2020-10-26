@@ -35,7 +35,9 @@ class MainJobs extends StatefulWidget {
   final bool showFilterCard;
   final String jobSearchQuery;
   final StreamBuilder<QuerySnapshot> filterDisplayCard;
+
   StreamController<List<DocumentSnapshot>> jobsStreamController;
+  
    ScrollController listScrollController = ScrollController();
    List<DocumentSnapshot> jobsDocumentList;
   @override
@@ -279,7 +281,7 @@ class _MainJobsState extends State<MainJobs> {
                 if (snapshot.data == null) {
 
                   return Center(
-                    child: Container( child: Column(
+                    child: Container( child: Column( 
                       children: [
                         CircularProgressIndicator(
                           backgroundColor: Colors.black,
