@@ -16,8 +16,8 @@
 
 
 const minMeetingRooms = intervals => {
-    let start = [],
-      end = []
+    let start = [],end = [];
+      
   
       console.log(intervals)
 
