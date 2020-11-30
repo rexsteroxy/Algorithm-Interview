@@ -2,6 +2,8 @@
 
 function countingValleys(steps, path) {
     // Write your code here
+
+    //wow this algorithm is somehow 
     let ar = path.split('')
     if (steps !== ar.length) {
         return 0;
